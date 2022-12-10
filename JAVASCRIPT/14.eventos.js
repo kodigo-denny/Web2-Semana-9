@@ -25,10 +25,20 @@ const boton=document.querySelector('button')
 const cuerpo=document.querySelector('body')
 const formulario=document.querySelector('#formulario')
 
+console.log(formulario)
+
+boton.addEventListener('click',pulsar)
 
 function pulsar(){
     alert('Has pulsado correctamente')
 }
+
+function pulsar2(){
+    alert('Hola mundo')
+}
+
+
+
  
 window.addEventListener('resize',(e)=>{
     cuerpo.style.backgroundColor='green'
@@ -36,29 +46,44 @@ window.addEventListener('resize',(e)=>{
     cuerpo.style.height='1000px'
 })
 
-
-
 formulario.addEventListener('focus',(e)=>{
     formulario.style.backgroundColor='orangered'
 })
-
+/*
 formulario.addEventListener('blur',(e)=>{
+    formulario.style.backgroundColor='black'
+})
+*/
+/*
+const cambiar = (e) => {
+    formulario.style.backgroundColor='black'
+}
+*/
+
+formulario.addEventListener('blur', (e) =>{
     formulario.style.backgroundColor='black'
 })
 
 formulario.addEventListener('change',(e)=>{
     cuerpo.style.backgroundColor='yellow'
+    console.log("Cambio")
 })
 
-document.addEventListener('click',()=>{
+
+document.addEventListener('click',(e)=>{
     cuerpo.style.width='300px'
     cuerpo.style.height='300px'
-    cuerpo.style.backgroundColor='blue'
+    //cuerpo.style.backgroundColor='blue'
+    const x = document.querySelector('#txt1')
+    const y = document.querySelector('#txt2')
+    x.value = e.clientX
+    y.value = e.clientY
+    console.log(e)
 })
 
 formulario.addEventListener('click',cambiaAlto)
 
 
 function cambiaAlto(){
-    formulario.style.height='100px'
+    formulario.style.height='50px'
 }

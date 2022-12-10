@@ -64,62 +64,63 @@ console.log(clonadoBody)
 console.log(document.contentType)
 
 //CREANDO ATRIBUTOS 
-/*
-let subtitulo=document.querySelector('#sub1')
+
+let subtitulo = document.querySelector('#sub1')
 
 subtitulo.setAttribute('class','tituloClase')
-*/
+
 //SELECCIONAR ELEMENTOS  
-/*
+
 let subtitulo2=document.querySelector('#sub2')
 let subtitulo3=document.querySelector('#sub3')
-*/
-/*
+
+
 subtitulo2.style.color='red'
 subtitulo3.style.color='green'
 subtitulo3.textContent='AHORA CAMBIO'
-*/
+
 
 //CREANDO UN COMENTARIO  
-/*
+
 let comentario=document.createComment('soy un comentario')
 console.log(comentario)
-*/
+
 //FRAGMENT  
-/*
+
 let container=document.createDocumentFragment()
+console.log(container)
 document.appendChild(container)
-*/
+
 //CREANDO UN NODO DE TEXTO DESDE JAVASCRIPT 
-/*
+
 const textNode=document.createTextNode('Soy un nodo de texto')
 document.body.appendChild(textNode)
-*/
+
 //ACCEDER A LA ETIQUETA HTML/DOCTYPE 
 
-//console.log(document.doctype)
+console.log(document.doctype)
 
 //NOS DA EL ELEMENTO HTML  
-//console.log(document.documentElement)
+console.log(document.documentElement)
 
 //URI 
-//console.log(document.documentURI)
+console.log(document.documentURI)
 
 //SABER EL DOMAIN O DOMINIO 
-//console.log(document.domain)
+console.log(document.domain)
 //PRIMER HIJO 
-//console.log(document.firstChild)
+console.log(document.firstChild)
 
 //PRIMER ELEMENTO HIJO 
 
-//console.log(document.firstElementChild)
+console.log(document.firstElementChild)
 
 //QUERYSELECTORALL 
-/*
+
 const enlaces=[...document.querySelectorAll('a')]
+console.log(enlaces)
 
 enlaces.map(enlace=>{
     enlace.style.color='red'
     enlace.style.backgroundColor='pink'
 })
-*/
